@@ -1,0 +1,7 @@
+app_homepage: 
+    path: / 
+    controller: App\Controller\HomeController::index
+    
+app_docservice: 
+    path: /trigger-document-service 
+    controller: App\Controller\HomeController::triggerDocService

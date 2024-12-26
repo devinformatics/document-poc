@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'homepage' %}
+
+{#
+    the homepage is a special page which displays neither a header nor a footer.
+    this is done with the 'trick' of defining empty Twig blocks without any content
+#}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block body %}
+    <div class="page-header">
+        <h1>Document Service Application</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="jumbotron">
+                <p>
+                    {{ message }}
+                </p>
+            </div>
+        </div>
+    </div>
+	<div class="row">
+        <div class="col-sm">
+            <div class="jumbotron">
+                <p>
+                    <a href="trigger-document-service">Click here to sync documents</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
